@@ -7,13 +7,17 @@ from os.path import split, join
 from time import sleep
 
 
-def sit(): print("сажусь")
-def show_face(): print("подмигиваю")
-def move_head(): print("киваю и машу ушами")
-def standup(): print("встаю")
+def sit():
+    print("сажусь")
 
+def show_face():
+    print("подмигиваю")
 
-def jump(): print("прыгаю")
+def move_head():
+    print("киваю и машу ушами")
+
+def standup():
+    print("встаю")
 
 
 FILE_DIR = split(__file__)[0]
@@ -62,8 +66,6 @@ try:
                 sit()
                 sleep(5)
                 standup()
-            elif "подпрыгни" in command:
-                jump()
             elif "голос" in command:
                 sd.play(data, fs)
 

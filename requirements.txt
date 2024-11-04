@@ -1,0 +1,7 @@
+pvporcupine
+pvrecorder
+speechrecognition
+sounddevice
+soundfile
+pyaudio
+numpy
